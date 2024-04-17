@@ -70,23 +70,21 @@ git add .
 ```
 
     Commit the files that you've staged in your local repository.
-    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % gh repo create pythonProject1
+    % gh repo create pythonProject1
     To get started with GitHub CLI, please run:  gh auth login
     Alternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token.
-    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % gh auth login
+    % gh auth login
     ? What account do you want to log into? GitHub.com
     ? What is your preferred protocol for Git operations on this host? HTTPS
     ? Authenticate Git with your GitHub credentials? Yes
     ? How would you like to authenticate GitHub CLI? Login with a web browser
     
-    ! First copy your one-time code: 7F0D-3F20
+    ! First copy your one-time code: ####-####
     Press Enter to open github.com in your browser... 
     ✓ Authentication complete.
     - gh config set -h github.com git_protocol https
     ✓ Configured git protocol
     ✓ Logged in as niladriforu
-    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % 
-    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % 
 
 ```bash
  git commit -m "First commit"
