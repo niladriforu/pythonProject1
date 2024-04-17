@@ -30,7 +30,7 @@ cat /Users/username/.jenkins/secrets/initialAdminPassword
 http://localhost:8080
 ```
         This is how the screen looks : 
-        ![Jenkins](/Users/niladri/Downloads/jenkins_login_screen.png)
+        ![Jenkins](/pythonProject1/img/jenkins_login_screen.png)
 
 # Restart and other useful commands
 Restart the Jenkins service: 
