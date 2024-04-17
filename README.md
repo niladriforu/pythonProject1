@@ -84,7 +84,6 @@ git add .
     ✓ Authentication complete.
     - gh config set -h github.com git_protocol https
     ✓ Configured git protocol
-    ✓ Logged in as niladriforu
 
 ```bash
  git commit -m "First commit"
