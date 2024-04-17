@@ -25,7 +25,12 @@ cat /Users/username/.jenkins/secrets/initialAdminPassword
 ```
         Now you are the adminuser. You can create multiple users and assign 
         roles to them. You can also install plugins and configure Jenkins as
-        per your requirements.
+        per your requirements. You can access the Jenkins at the following url:
+```bash
+http://localhost:8080
+```
+        This is how the screen looks : 
+        ![Jenkins](/Users/niladri/Downloads/jenkins_login_screen.png)
 
 # Restart and other useful commands
 Restart the Jenkins service: 
@@ -46,3 +51,55 @@ This is to install the GitHub CLI. This is a command-line tool that brings GitHu
 ```bash
 brew install gh
 ```
+    The following command will authenticate you with your GitHub account.
+    For this you will be asked a set of questions. Prefer to use the default
+    values.
+```bash
+gh auth login
+
+```
+    The following command will Initialize the local directory as a Git repository. By default, the initial branch is called main.
+
+```bash
+git init -b main
+```
+   Add the files in your new local repository. This stages them for the first commit.
+
+```bash
+git add .
+```
+
+    Commit the files that you've staged in your local repository.
+    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % gh repo create pythonProject1
+    To get started with GitHub CLI, please run:  gh auth login
+    Alternatively, populate the GH_TOKEN environment variable with a GitHub API authentication token.
+    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % gh auth login
+    ? What account do you want to log into? GitHub.com
+    ? What is your preferred protocol for Git operations on this host? HTTPS
+    ? Authenticate Git with your GitHub credentials? Yes
+    ? How would you like to authenticate GitHub CLI? Login with a web browser
+    
+    ! First copy your one-time code: 7F0D-3F20
+    Press Enter to open github.com in your browser... 
+    ✓ Authentication complete.
+    - gh config set -h github.com git_protocol https
+    ✓ Configured git protocol
+    ✓ Logged in as niladriforu
+    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % 
+    (.venv) niladri@niladris-MacBook-Pro-2 pythonProject1 % 
+
+```bash
+ git commit -m "First commit"
+```
+
+    In the Command prompt, add the URL for the remote repository where your local repository will be pushed.
+```bash
+git remote add origin remote repository URL
+```
+
+    In the Command prompt, push the changes in your local repository to GitHub.
+```bash
+git push -u origin main
+```
+
+
