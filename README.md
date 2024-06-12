@@ -98,5 +98,20 @@ git remote add origin remote repository URL
 ```bash
 git push -u origin main
 ```
-
-
+```commandline
+Install poetry by running the following command:
+```
+```bash
+pip install poetry
+```
+```commandline
+```
+```bash
+poetry new pythonProject1
+poetry init ( to create a new project)
+poetry lock ( creates lock file)
+```
+```commandline
+For newcomers to the project, getting the exact same package versions as the last person that updated the lock file is as easy as running 
+poetry install
+```commandline
